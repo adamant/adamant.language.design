@@ -25,3 +25,29 @@ Do not provide multiple equivalent ways to do something or express something.
 ## Support Program Evolution
 
 Code changes over time, the language should make that process as smooth as possible. For example, requiring explicit override or hide keywords allows for a clear handling of the situation where a method is added to a base class that matches a method that was previously present only on a subclass.
+
+## Syntax Matters
+
+Syntax conveys style. For example, the abbrevated keywords of Rust lead to a culture of abbrevated and over shortened names. The Rust community settled on short package names.
+
+Familiar syntax can make it easier to learn the language. Consistent use of syntax for different language features can make things clearer.
+
+## Careful Review
+
+Each feature and syntax should be carefully reviewed to make sure it is in accord with all principles. Need to consider many sources. For example, Kevlin Henny's critisms of package names based on company names. I would not have thought to re-evaluate that.
+
+Review syntax and semantics across languages. Review reasons for language design. For example, should promises be hot or cold, or promises versus eventual values versus green threads.
+
+## Wierdness Budget
+
+## Be Wary of Untried Features and Syntax
+
+## Orthognality
+
+## Readability
+
+Code is most limited by readability. A little extra effort in writing the code for greater readability and clarity is worth it.
+
+## Only One Way to Do Things
+
+Versus langauges that are opposed to this.
