@@ -8,4 +8,5 @@
   * [Naming and Convetions](naming-and-conventions.md)
   * [Ownership](ownership.md)
   * [Primitive Types](primitive-types.md)
-* [Design Sources](design-sources.md) 
+  * [Raw Pointers](raw-pointers.md)
+* [Design Sources](design-sources.md)
