@@ -10,4 +10,5 @@
   * [Ownership](ownership.md)
   * [Primitive Types](primitive-types.md)
   * [Raw Pointers](raw-pointers.md)
+  * [Operators](operators.md)
 * [Design Sources](design-sources.md)
