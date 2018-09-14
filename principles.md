@@ -28,21 +28,21 @@ Code changes over time, the language should make that process as smooth as possi
 
 ## Syntax Matters
 
-Syntax conveys style. For example, the abbrevated keywords of Rust lead to a culture of abbrevated and over shortened names. The Rust community settled on short package names.
+Syntax conveys style. For example, the abbreviated keywords of Rust lead to a culture of abbreviated and over shortened names. The Rust community settled on short package names.
 
 Familiar syntax can make it easier to learn the language. Consistent use of syntax for different language features can make things clearer.
 
 ## Careful Review
 
-Each feature and syntax should be carefully reviewed to make sure it is in accord with all principles. Need to consider many sources. For example, Kevlin Henny's critisms of package names based on company names. I would not have thought to re-evaluate that.
+Each feature and syntax should be carefully reviewed to make sure it is in accord with all principles. Need to consider many sources. For example, Kevlin Henny's criticisms of package names based on company names. I would not have thought to re-evaluate that.
 
 Review syntax and semantics across languages. Review reasons for language design. For example, should promises be hot or cold, or promises versus eventual values versus green threads.
 
-## Wierdness Budget
+## Weirdness Budget
 
 ## Be Wary of Untried Features and Syntax
 
-## Orthognality
+## Orthogonality
 
 ## Readability
 
@@ -50,4 +50,4 @@ Code is most limited by readability. A little extra effort in writing the code f
 
 ## Only One Way to Do Things
 
-Versus langauges that are opposed to this.
+Versus languages that are opposed to this.
