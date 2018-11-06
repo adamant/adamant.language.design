@@ -11,4 +11,5 @@
   * [Primitive Types](primitive-types.md)
   * [Raw Pointers](raw-pointers.md)
   * [Operators](operators.md)
+  * [Memory Allocation](memory-allocation.md)
 * [Design Sources](design-sources.md)
