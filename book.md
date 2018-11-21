@@ -5,6 +5,7 @@
 * [Terminology](terminology.md)
 * [Design Decisions](design-decisions.md)
   * [Classes and Structs](classes-and-structs.md)
+  * [Namespaces](namespaces.md)
   * [Control Flow](control-flow.md)
   * [Naming and Conventions](naming-and-conventions.md)
   * [Ownership](ownership.md)

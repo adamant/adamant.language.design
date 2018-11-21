@@ -18,6 +18,10 @@ Any value with mutable state should be created with the `new` operator. Rust doe
 
 Given a method `M` in interface `A` and interfaces `B` and `C` that implement `A` and override `M`, a class `D` that implements `B` and `C` must override `M` to provide a unique implementation of `M` to be called. This applies even if `B` and `C` rename `M`. At first glance this seems a strange restriction to place. However, since Adamant is trying to not lock in an implementation, this restriction ensures certain implementations are possible, and can be safely removed in the future if desired. Specifically, it enables a vtable implementation where every method across all classes is assigned a unique slot and there is only one vtable pointer in an object. If this restriction were not in place, it would then be ambiguous which method pointer to put in the `M` vtable slot for class `D`.
 
-## `internal` Access Modifier
+## Private
 
-Several other keywords were considered instead of `internal` for that access modifier. The internal keyword doesn't clearly indicate internal to what. For a while `package` was used instead. However, package reads as if one is actually declaring a package. The synonyms of internal `limited` and `restricted` were also considered. They have the same problem of not clearly indicating what unit they are relative to. Given that, it seemed best to stay with `internal` for familiarity to C#.
+Private members are private to the instance not shared between instances of the class. This difference from the other OO languages is because one can subtype a class. If a class could access other objects private fields, it could attempt to access a private field on a type that is a subtype but doesn't have that field.
+
+## Override Fields
+
+Non-private fields can be overridden with other fields or properties. This is necessary because a class can subtype another class and must have a way of providing behavior for the accessible fields. This also has the advantage of allowing direct use of fields rather than making everything a property with "`get`" and "`set`" functions.
