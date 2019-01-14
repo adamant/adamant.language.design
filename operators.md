@@ -11,3 +11,7 @@ For years, an accept operator had been planned. This was to be the symbol `..` a
 ## Overload Not a Trait Implementation
 
 Operators are not tied simple methods on special traits the way they are in Rust because that would imply that they have universal semantics. That is, that every use of the operator is meant to have the same semantics. However, just like method names, the same operator can have two different meanings in different contexts. Indeed, a given operator may have different pre- and post- conditions on different types.
+
+## Overloaded Operator Operand Placeholders
+
+Inspired by the Agda language there had been thought of using `_` as a placeholder in operator overload declarations. At first, this was considered only to support future expansion of the language to support arbitrary mixfix operators. However, when the user and string literal operators were added, it seemed prudent to include the `_` placeholder with them. Then when overloading of the range operators was considered, it was realized first that they had both prefix and suffix unary forms to the placeholder was needed to distinguish these. Then it was further realized that there were both nullary and binary forms of these operators. Thus `..` would be a nullary operator while `_.._` would be a binary operator. For consistency, it then made the most sense to require the placeholders for all binary operators.
