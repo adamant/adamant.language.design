@@ -4,6 +4,7 @@
 * [Principles](principles.md)
 * [Terminology](terminology.md)
 * [Design Decisions](design-decisions.md)
+  * [Lexical Structure](lexical.md)
   * [Classes and Structs](classes-and-structs.md)
   * [Namespaces](namespaces.md)
   * [Control Flow](control-flow.md)
